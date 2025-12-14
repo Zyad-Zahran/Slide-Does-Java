@@ -8,7 +8,7 @@ public class Character {
     protected String classAttribute;
     protected String zone;
     String name;
-    private final String[] party;
+    private String[] party;
     public Character(String[] party,String name, int level, double experience, String classAttribute, String zone) {
         this.level = level;
         this.experience = experience;
@@ -25,4 +25,28 @@ public class Character {
         System.out.println("=====================");
     }
 
+    public String getClassAttribute() {
+        return classAttribute;
+    }
+
+    public void setClassAttribute(String classAttribute) {
+        this.classAttribute = classAttribute;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setZone(String zone) {
+        this.zone = zone;
+    }
+
+    public String[] getParty() {
+        return party;
+    }
+
+    public void setParty(String[] party){
+        this.party= party;
+
+    }
 }
