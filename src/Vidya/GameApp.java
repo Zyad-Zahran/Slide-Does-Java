@@ -27,5 +27,13 @@ public class GameApp {
         playerCharacter.setZone("Hidden Leaf Village");
         System.out.println("Your final updated character specs: ");
         playerCharacter.getDescription();
+        System.out.println("============================");
+        madgePeasant.squadUp("");
+        friendlyPeasant.squadUp("");
+        currentParty.squadUp(playerCharacter.getName());
+        playerCharacter.squadUp("");
+        System.out.println("======================");
+        playerCharacter.teleport("",currentParty.getName());
+        currentParty.teleport(playerCharacter.getName(), currentParty.getName());
     }
 }
