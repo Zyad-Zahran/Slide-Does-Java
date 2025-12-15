@@ -2,7 +2,7 @@ package Vidya;
 
 import java.util.Arrays;
 
-public class Character {
+public abstract class Character {
     protected int level;
     double experience;
     protected String classAttribute;
@@ -49,4 +49,10 @@ public class Character {
         this.party= party;
 
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public abstract void squadUp(String target);
 }
